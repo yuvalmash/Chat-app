@@ -6,7 +6,7 @@ import Messages from '../Messages/Messages'
 import { Redirect } from "react-router-dom";
 import { observer } from 'mobx-react';
 
-let ENDPOINT = 'https://chat-room-backend-302810.el.r.appspot.com/'
+let ENDPOINT = 'https://best-chat-app.herokuapp.com/'
 console.log("process.env.NODE_ENV= ", process.env.NODE_ENV)
 
 if (process.env.NODE_ENV === 'development') {

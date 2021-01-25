@@ -10,7 +10,6 @@ const router = require("./router")
 const { addUser, removeUser, getUser } = require("./helpers")
 
 const app = express()
-app.use(cors())
 
 const server = http.createServer(app)
 const io = socketio(server, {
@@ -48,8 +47,9 @@ io.on('connection', (socket) => {
 
 
 app.use(router)
+app.use(cors())
 
-server.listen(PORT, () => {
+server.listen(process.env.PORT || 5000, () => {
     console.log("Server started on port " + PORT)
 })
 
