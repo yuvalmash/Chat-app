@@ -6,7 +6,13 @@ import Messages from '../Messages/Messages'
 import { Redirect } from "react-router-dom";
 import { observer } from 'mobx-react';
 
-const ENDPOINT = 'localhost:5000'
+let ENDPOINT = 'https://chat-room-backend-302810.el.r.appspot.com/'
+console.log("process.env.NODE_ENV= ", process.env.NODE_ENV)
+
+if (process.env.NODE_ENV === 'development') {
+    ENDPOINT = 'localhost:5000'
+}
+
 let socket
 export default observer(
     function Room() {
