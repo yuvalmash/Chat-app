@@ -1,0 +1,22 @@
+.messages {
+    padding: 5% 0;
+    overflow: auto;
+    flex: auto;
+  }
+
+.messageBox {
+    background-color: #a6f0c6;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #719fb0;
+    display: table;
+  }
+
+  .messageBoxAdmin{
+    background-color: #ffb26b;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #719fb0;
+    display: table;
+  }
+  

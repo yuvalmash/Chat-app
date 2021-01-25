@@ -1,0 +1,31 @@
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1A1A1D;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    width: 95%;
+    height: 95%;
+    background: #f7f7e8;
+    text-align: center;
+  }
+
+  .line input  {
+    width: 95%;
+    height: 54%;
+    border-radius: 8px;
+    font-size: 30px;
+    padding: 2%;
+  }
+
+  .line button  {
+    border-radius: 8px;
+    font-size: 30px;
+}
